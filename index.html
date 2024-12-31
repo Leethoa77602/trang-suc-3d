@@ -1,48 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trang Sức 3D</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Bracelet Designer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Tuỳ chỉnh vòng tay của bạn</h1>
-  <div id="controls">
-    <label for="ngoc">Chọn Ngọc:</label>
-    <select id="ngoc">
-      <option value="white">Ngọc Trắng</option>
-      <option value="black">Ngọc Đen</option>
-    </select>
-  </div>
-  <div id="viewer"></div>
-  <script src="script.js"></script>
+    <div id="app">
+        <h1>Thiết kế vòng tay của bạn</h1>
+        <div id="customizer">
+            <label for="pearls">Chọn hạt ngọc trai:</label>
+            <select id="pearls">
+                <option value="pearl1">Hạt ngọc 1</option>
+                <option value="pearl2">Hạt ngọc 2</option>
+            </select>
+
+            <label for="cord">Chọn dây:</label>
+            <select id="cord">
+                <option value="cord1">Dây 1</option>
+                <option value="cord2">Dây 2</option>
+            </select>
+
+            <label for="charm">Chọn charm:</label>
+            <select id="charm">
+                <option value="charm1">Charm 1</option>
+                <option value="charm2">Charm 2</option>
+            </select>
+        </div>
+        <div id="preview">
+            <h2>Vòng tay của bạn:</h2>
+            <canvas id="braceletPreview"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
-</html><div id="controls">
-  <label for="ngoc">Chọn Ngọc:</label>
-  <select id="ngoc">
-    <option value="white">Ngọc Trắng</option>
-    <option value="black">Ngọc Đen</option>
-  </select>
-
-  <label for="charm">Chọn Charm:</label>
-  <select id="charm">
-    <option value="none">Không Charm</option>
-    <option value="gold">Charm Vàng</option>
-    <option value="silver">Charm Bạc</option>
-  </select>
-
-  <label for="day">Chọn Dây:</label>
-  <select id="day">
-    <option value="leather">Dây Da</option>
-    <option value="metal">Dây Kim Loại</option>
-  </select>
-
-  <label for="khoa">Chọn Khóa:</label>
-  <select id="khoa">
-    <option value="basic">Khóa Thường</option>
-    <option value="fancy">Khóa Fancy</option>
-  </select>
-</div>
-
+</html>
